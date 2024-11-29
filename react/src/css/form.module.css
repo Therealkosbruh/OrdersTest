@@ -1,0 +1,94 @@
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+  }
+  
+  .popupContent {
+    background: rgba(33, 33, 33, 0.75); 
+    backdrop-filter: blur(10px); 
+    border-radius: 25px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    position: relative; 
+  }
+  
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none; 
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s; 
+  }
+  
+  .closeButton:hover {
+    color: red; 
+  }
+  
+  .popupContent h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .popupContent h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  
+  
+  .popupContent form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  
+  .popupContent input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    text-align: center;
+  }
+  
+  .popupContent button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: #ffce00;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .popupContent button:hover {
+    background: #ffd633;
+  }
+  .hidden {
+    display: none;  /* Убирает элемент из потока документа, он не виден и не занимает место */
+}
+
+
+  
